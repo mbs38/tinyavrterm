@@ -67,7 +67,7 @@ volatile uint8_t txbdistance = 0;
 #define TXBDATA_READY (txbdistance!=0)
 
 void limIncr(volatile uint8_t * var) {
-        if (*var<txbufsize) {
+        if (*var<(txbufsize-1)) {
                 (*var)++;
         } else *var=0;
 }
