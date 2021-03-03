@@ -7,12 +7,12 @@
 
 const __flash char * const __flash myCommandList [] = 
 {
-    FSTR ("help\x00"), FSTR ("cmd1\x00"), FSTR ("cmd2\x00")
+    FSTR ("help"), FSTR ("cmd1"), FSTR ("cmd2")
 };
 
 const __flash char * const __flash messages[] = 
 {
-    FSTR ("Welcome to tinyavrterm!\x00"), FSTR ("Command not found.\x00"), FSTR ("Boom!")
+    FSTR ("Welcome to tinyavrterm!"), FSTR ("Command not found."), FSTR ("Boom!")
 };
 
 int main(void)
